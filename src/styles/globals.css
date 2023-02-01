@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scrollbar-width: thin;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  *::-webkit-scrollbar-track {
+
+    border-radius: 5px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+  }
+
+body {
+    @apply bg-dark-blue-900 text-slate-50 antialiased font-Roboto
+}
