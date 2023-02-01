@@ -84,7 +84,7 @@ export function MensagemReducer(state: MensagemStateProps, action: any) {
         case ActionTypes.GET_TWITTER_TOPICS:
             const trendsTopicsMensagem: MensagemProps = {
                 author: "Cecilia",
-                content: `Sabia que o twitter é a minha rede social favorita ? 🐦\nNo momento os assuntos mais comentados são: \n\n-${action.payload.trendsTopics[0]} \n\n-${action.payload.trendsTopics[1]} \n\n-${action.payload.trendsTopics[2]} \n\n-${action.payload.trendsTopics[3]} \n\n-${action.payload.trendsTopics[4]}`,
+                content: `Sabia que o twitter é a minha rede social favorita ? 🐦\nNo momento os assuntos mais comentados são: \n\n- ${action.payload.trendsTopics[0]} \n\n- ${action.payload.trendsTopics[1]} \n\n- ${action.payload.trendsTopics[2]} \n\n- ${action.payload.trendsTopics[3]} \n\n- ${action.payload.trendsTopics[4]}`,
             }
 
             return {

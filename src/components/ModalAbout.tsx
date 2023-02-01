@@ -25,7 +25,7 @@ export function ModalAbout() {
                     <div className='flex flex-col justify-center items-center gap-2 text-xs font-medium hover:brightness-75 duration-300 text-zinc-300'><Umbrella size={30} color='#7F7FA8' /> Temperatura</div>
                     <div className='flex flex-col justify-center items-center gap-2 text-xs font-medium hover:brightness-75 duration-300 text-zinc-300'><CurrencyDollar size={30} color='#7F7FA8' />  Euro - Dolar</div>
                 </div>
-                <strong className='text-[10px] mt-7 font-normal brightness-90 ml-auto'>Feito com 💜 por <a href="https://github.com/Norrels" target="_blank">Matheus Zac</a> </strong>
+                <strong className='text-[10px] mt-7 font-normal brightness-90 ml-auto'>Feito com 💜 por <a href="https://github.com/Norrels" target="_blank" rel="noreferrer" >Matheus Zac</a> </strong>
             </Dialog.Content>
         </Dialog.Portal>
     )
