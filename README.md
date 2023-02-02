@@ -16,7 +16,7 @@ Acesse o link do [layout](https://www.figma.com/community/file/12000707436374956
 - **💵 Dólar** "Quantos está valendo o dólar?"
 
 ### Acesse a aplicação
-[Cecília Chat](https://cecilia-chat.vercel.app/)
+[Cecília Chat](https://cecilia-chatbot-next-js.vercel.app/)
 
 ### Tecnologias Utilizadas
 - Feito em Typescript
