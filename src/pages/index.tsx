@@ -11,10 +11,12 @@ import { askCity, getCoinCurrency, getNextHoliday, getTaxes, getTime, getTwitter
 import { ModalAbout } from '../components/ModalAbout'
 import Head from 'next/head'
 
+const OPEN_WEATHER_TOKEN = process.env.NEXT_PUBLIC_OPEN_WEATHER_TOKEN
+
 export default function Home() {
 
   const [mensagemState, dispatch] = useReducer(MensagemReducer, {
-    mensagem: [{ author: 'Cecilia', content: 'Olá, tudo bem ?' }],
+    mensagem: [{ author: 'Cecilia', content: 'Oiee, \n\nNo que eu posso te ajudar agora?' }],
   });
   const [isLoading, setIsLoading] = useState(false)
   const [newMensagem, setNewMensagem] = useState("")
@@ -44,7 +46,7 @@ export default function Home() {
   async function fetchWeather(city: string) {
     setNewMensagem("")
     try {
-      const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=53c7160acc821c2f2b82363eda5a0bd6&lang=pt_br`)
+      const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPEN_WEATHER_TOKEN}&lang=pt_br`)
       dispatch(getWeather(data))
       setIsLoading(false)
 
@@ -64,6 +66,7 @@ export default function Home() {
 
       switch (userMensagems[index].toLowerCase()) {
         case "horas":
+        case "hora":
           loop_control = true
           setTimeout(() => {
             dispatch(getTime())
@@ -120,7 +123,7 @@ export default function Home() {
           }
           break;
         case "dolar":
-          case "dólar":
+        case "dólar":
           loop_control = true
           try {
             const { data } = await axios.get('https://economia.awesomeapi.com.br/json/last/USD-BRL')

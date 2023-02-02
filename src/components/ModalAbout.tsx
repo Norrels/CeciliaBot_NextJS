@@ -15,7 +15,7 @@ export function ModalAbout() {
                     <X size={24} />
                 </Dialog.Close>
                 <Dialog.Title className='font-bold text-xl'>Olá,  Seja bem <span className='text-violet-950'>Vindo!</span></Dialog.Title>
-                <Dialog.Description className='sm:w-9/12 text-center text-sm font-normal' >Tenha paciência com a cici ela tem apenas <span className='text-violet-950 font-bold'>{ceciliaLifeTime}</span> de vida, e no momento ela só reconhece as seguintes palavras-chave</Dialog.Description>
+                <Dialog.Description className='sm:w-9/12 text-center text-sm font-normal' >Tenha paciência com a Ceci ela tem apenas <span className='text-violet-950 font-bold'>{ceciliaLifeTime}</span> de vida, e no momento ela só reconhece as seguintes palavras-chave</Dialog.Description>
                 <div className='sm:flex grid sm:gap-3 gap-6 sm:justify-between grid-flow-col sm:w-10/12 w-11/12 grid-rows-3 mt-5 flex-wrap'>
                     <div className='flex flex-col justify-center items-center gap-2 text-xs font-medium hover:brightness-75 duration-300 text-zinc-300'><Activity size={30} color='#7F7FA8' /> Selic - CDI - IPCA</div>
                     <div className='flex flex-col justify-center items-center gap-2 text-xs font-medium hover:brightness-75 duration-300 text-zinc-300'><TwitterLogo size={30} color='#7F7FA8' /> Twitter</div>
